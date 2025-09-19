@@ -64,7 +64,7 @@ $imageLast = get_field('image_last');
                     </div>
                 </div>
                 <?php foreach($specs as $i => $spec) : $isLast = count($specs) == ($i + 1) ?>
-                    <div class="flex text-theme-soft-gray justify-between items-center <?= $isLast ? 'py-4 px-4' : 'py-2 px-4' ?>">
+                    <div class="flex text-theme-soft-gray justify-between items-center <?= $isLast ? 'py-2 px-4' : 'py-2 px-4' ?>">
                         <div class="title">
                             <li class="<?= $isLast ? 'text-small' : 'text-small' ?> list-disc"><?= $spec['title'] ?></li>
                         </div>
