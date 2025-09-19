@@ -23,8 +23,10 @@ const initButton = (el) => {
     }
 
     if(el.classList.contains('to-next-section')) {
-        const nextSection = document.querySelectorAll('.page-container section')[1]
-        gsap.to(window, {duration: .4, scrollTo: nextSection})
+        el.addEventListener('click', () => {
+            const nextSection = document.querySelectorAll('.page-container section')[1]
+            gsap.to(window, {duration: .4, scrollTo: nextSection})
+        })
     }
 
     const getXY = e => {
