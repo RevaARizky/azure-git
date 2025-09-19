@@ -11,7 +11,7 @@ const initImage = (element) => {
     window.addEventListener('resize', setStyle)
 
     const image = element.querySelector('img')
-
+    if(element.classList.contains('no-anim')) return
     gsap.set(image, {
         height: '170%'
     })
