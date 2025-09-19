@@ -1,0 +1,19 @@
+{
+    "apiVersion": 2,
+    "name": "acf/two-column-container",
+    "title": "2 Cols Container",
+    "description": "Container for 2 Column",
+    "category": "Text",
+    "keywords": ["container", "2", "two", "column", "azure"],
+    "viewScript": ["blocks/two-column-container"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    }
+  }

@@ -1,0 +1,133 @@
+.block-text.revert, .revert-text {
+    /* Typography and content elements */
+    body,
+    div,
+    section,
+    article,
+    aside,
+    header,
+    footer,
+    nav,
+    main,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    address,
+    b,
+    strong,
+    code,
+    del,
+    dfn,
+    em,
+    i,
+    img,
+    ins,
+    kbd,
+    mark,
+    q,
+    s,
+    samp,
+    small,
+    span,
+    sub,
+    sup,
+    time,
+    u,
+    var {
+        all: unset;
+        display: revert;
+    }
+
+    /* Block-level elements */
+    p {
+        margin: 1em 0;
+    }
+
+    blockquote {
+        margin: 1em 40px;
+    }
+
+    h1 {
+        margin: 0.67em 0;
+    }
+
+    h2 {
+        margin: 0.75em 0;
+    }
+
+    h3 {
+        margin: 0.83em 0;
+    }
+
+    h4 {
+        margin: 1.12em 0;
+    }
+
+    h5 {
+        margin: 1.5em 0;
+    }
+
+    h6 {
+        margin: 1.67em 0;
+    }
+
+    sub,
+    sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    sub {
+        bottom: -0.25em;
+    }
+
+    sup {
+        top: -0.5em;
+    }
+
+    /* Lists */
+    ul {
+        list-style: disc;
+        margin: 1em 0;
+        padding-left: 40px;
+    }
+    
+    ol {
+        list-style: decimal;
+        margin: 1em 0;
+        padding-left: 40px;
+    }
+
+    li {
+        display: list-item;
+        margin-bottom: .75rem;
+    }
+
+    /* Tables */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    th,
+    td {
+        padding: 0.5em;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+
+    caption {
+        text-align: left;
+        margin-bottom: 0.5em;
+    }
+}

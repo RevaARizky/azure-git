@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/table",
+    "title": "Table",
+    "description": "Tables",
+    "category": "Text",
+    "keywords": ["table", "azure"],
+    "viewScript": ["blocks/table"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

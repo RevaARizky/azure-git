@@ -1,0 +1,103 @@
+:root {
+    // --color-surface-white: #fff;
+    // --color-just-black: #214b77;
+    --ease-in-out-quart: ease;
+    --btn-background-color: transparent;
+    --btn-font-color: #fff;
+    --btn-border-color: transparent;
+    --btn-border-width: 0;
+
+    --btn-hover-background-color: #214b77;
+    --btn-hover-font-color: #fff;
+    --btn-hover-border-color: var(--btn-hover-background-color);
+}
+
+.button {
+  align-items: center;
+  background: 0 0;
+  border-width: var(--btn-border-width);
+  border-color: var(--btn-border-color);
+  background-color: var(--btn-background-color);
+  border-radius: .75rem;
+  color: var(--btn-font-color);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  gap: 0.363636em;
+  justify-content: center;
+  letter-spacing: -0.01em;
+  line-height: 1.04545;
+  overflow: hidden;
+  padding: 0.9375rem 1.5rem;
+  position: relative;
+  text-decoration: none;
+  word-break: break-word;
+  text-decoration: none;
+
+  &.button-big {
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+  }
+}
+  
+  @media (hover: hover) {
+    .button.button--stroke:hover {
+      color: var(--btn-hover-font-color);
+      text-decoration: none;
+    }
+  }
+  
+  .button--stroke:after {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .button--stroke:after {
+    // border: 0.125rem solid var(--);
+    border-radius: .75rem;
+    content: "";
+    pointer-events: none;
+  }
+  
+  .button__label {
+    position: relative;
+    text-align: center;
+    transition: color 50ms var(--ease-in-out-quart);
+  }
+  
+  .button--stroke:hover .button__label {
+    transition: color 0.15s var(--ease-in-out-quart);
+  }
+  
+  .button__flair {
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .button--stroke .button__flair {
+    transform: scale(0);
+    transform-origin: 0 0;
+    will-change: transform;
+  }
+  
+  .button__flair:before {
+    aspect-ratio: 1/1;
+    background-color: var(--btn-hover-background-color);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 170%;
+  }

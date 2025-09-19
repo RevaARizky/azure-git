@@ -1,0 +1,22 @@
+{
+  "apiVersion": 2,
+  "name": "acf/one-column-container",
+  "title": "1 Cols Container",
+  "description": "Container for 21Column",
+  "category": "Text",
+  "keywords": ["container", "1", "one", "column", "azure"],
+  "viewScript": ["blocks/one-column-container"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "block.php"
+  },
+  "supports": {
+    "align": false,
+    "anchor": true,
+    "customClassName": true,
+    "jsx": true
+  },
+  "providesContext": {
+      "azure/columnSpan": "12"
+  }
+}

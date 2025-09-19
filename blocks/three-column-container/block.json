@@ -1,0 +1,19 @@
+{
+    "apiVersion": 2,
+    "name": "acf/three-column-container",
+    "title": "3 Cols Container",
+    "description": "Container for 3 Column",
+    "category": "Text",
+    "keywords": ["container", "3", "three", "column", "azure"],
+    "viewScript": ["blocks/three-column-container"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    }
+  }

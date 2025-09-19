@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/button",
+    "title": "Liquid Button",
+    "description": "Button",
+    "category": "Text",
+    "keywords": ["button", "azure"],
+    "viewScript": ["blocks/button"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

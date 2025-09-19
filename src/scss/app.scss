@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./fonts";
+@import "./color";
+@import "./blocks/button";
+@import "./blocks/fixed";
+@import "./blocks/person-card";
+@import "./blocks/text";
+@import "./blocks/section-strips-horizontal";
+@import "locomotive-scroll/dist/locomotive-scroll";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
+
+:root {
+    --breakpoint: 480;
+    @media(min-width: 768px) {
+        --breakpoint: 768;
+    }
+    @media(min-width: 1280px) {
+        --breakpoint: 1280;
+    }
+    @media(min-width: 1440px) {
+        --breakpoint: 1440;
+    }
+    --hamburger-bg-color: #fff;
+    --bg-color: #fff;
+}
+
+.page-container {
+    >section, >.wp-block-spacer,  >div {
+        position: relative;
+        overflow-y: hidden;
+    }
+}
+
+footer {
+    overflow: hidden;
+    z-index: 9999;
+    position: relative;
+
+    .inner::after {
+        content: "";
+        background-image: var(--background-image);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 150%;
+        opacity: .1;
+        z-index: -1;
+    }
+
+
+    .social-list {
+        .social {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            --btn-hover-background-color: #214b77;
+            --btn-background-color: #fff;
+            padding: 0;
+
+            &:hover {
+                svg, path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+
+#loading-screen {
+    z-index: 9999999;
+    .strip-wrapper {
+        &::after {
+            content: "";
+            background-image: var(--background-image);
+            background-size: contain;
+            background-position: center;
+            position: absolute;
+            // background-color: var(--bg-color);
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            opacity: .1;
+            z-index: 1;
+        }
+    }
+}
+
+body.no-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.anim-cursor {
+    cursor: none;
+
+    .cursor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        pointer-events: none;
+    }
+}
+
+.marquee-item {
+    will-change: transform;
+    p {
+        font-size: calc(160/var(--breakpoint)*100vw);
+    }
+}
+
+.accordion-wrapper {
+    .accordion-hover {
+        position: absolute;
+        width: 100%;
+        height: 90px;
+        background-color: rgba(0,0,0,.4);
+        top: 0;
+        transform: translateY(90px);
+        pointer-events: none;
+    }
+}
+
+.cta-wrapper {
+
+    .cta {
+        position: relative;
+        svg {
+            position: absolute;
+            inset: 0;
+            path {
+                stroke-width: 5px;
+                stroke: #000;
+            }
+        }
+    }
+
+    .hamburger-wrapper {
+        cursor: pointer;
+        overflow: hidden;
+        .hamburger {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--hamburger-bg-color);
+                transform: translateX(-200%);
+            }
+        }
+    }
+}
+
+.block-accordion {
+    .accordion-item {
+        border-bottom: 1px solid rgba(74,74,74,.4);
+        position: relative;
+        overflow-x: hidden;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            transform: translateX(var(--transform));
+            background-color: rgba(74,74,74,1);
+        }
+    }
+}
+
+.swiper-overlay {
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 65%;
+        background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+        z-index: 1;
+        opacity: .8;
+    }
+}
+
+.swiper-pagination {
+    text-align: center;
+    --swiper-pagination-color: var(--theme-blue);
+    --swiper-pagination-bottom: -1.5rem;
+}
+
+.input-wrapper {
+    input, textarea {
+        width: 100%;
+    }
+}
+
+.block-property-overview {
+    .tab-wrapper {
+        .tab {
+            @apply text-theme-soft-gray cursor-pointer;
+            &.active {
+                background-color: #164371;
+                color: #fff;   
+            }
+        }
+    }
+}
+
+footer, aside {
+    .menu a {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: .125rem;
+            transform: translateX(var(--transform));
+            background-color: var(--color);
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .mobile-container {
+        @apply container;
+    }
+}
+
+// a {
+//     position: relative;
+// }
+
+// a::after {
+//     border-bottom: 1px solid #212529;
+//     content: "";
+//     display: block;
+//     height: .3125rem;
+//     margin-bottom: 0;
+//     position: relative;
+//     top: 0;
+//     transform: scaleX(1) translateY(-6px);
+//     transform-origin: left;
+//     transition: transform .3s ease-in-out;
+//     will-change: transform;
+// }
+
+// a:hover::after {
+//     transform: scaleX(0) translateY(-6px);
+//     transform-origin: right;
+// }
+
+.image-ratio {
+    img {
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// .block-property-overview-experimental {
+//     .image-wrapper.background {
+//         img::before {
+//             content: "test";
+//             position: absolute;
+//             left: 0%;
+//             top: 50%;
+//             transform: translate(-50%, -50%);
+//         }
+//     }
+// }
+
+.swiper-button-disabled {
+    cursor: default;
+    transition: none;
+    background: rgba(245,243,238,0.6)!important;
+    img {
+        opacity: .4;
+    }
+}
+
+.block-header {
+    .media-wrapper.has-darker {
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.4);
+            z-index: 1;
+        }
+    }
+}

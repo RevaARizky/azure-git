@@ -1,0 +1,20 @@
+{
+    "apiVersion": 2,
+    "name": "acf/form",
+    "title": "Form",
+    "description": "form",
+    "category": "Text",
+    "keywords": ["form", "azure"],
+    "viewScript": ["blocks/form"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    }
+  }
+  

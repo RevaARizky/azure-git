@@ -1,0 +1,9 @@
+.block-section-strips-horizontal {
+    .image-wrapper.background::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 6;
+        background: rgba(0,0,0,.3);
+    }
+}

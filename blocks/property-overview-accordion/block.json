@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/property-overview-accordion",
+    "title": "Property Overview Accordion",
+    "description": "Overview for Property accordion version",
+    "category": "Text",
+    "keywords": ["property", "overview", "azure"],
+    "viewScript": ["blocks/property-overview-accordion"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

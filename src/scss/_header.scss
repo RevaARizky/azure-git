@@ -1,0 +1,111 @@
+.header {
+  @apply bg-black bg-opacity-0 duration-200 py-6 lg:py-10;
+}
+
+.header svg path {
+  stroke: #222;
+}
+
+.header .menu-close svg path {
+  stroke: white;
+}
+
+.header .logo {
+  @apply hidden h-[40px] md:h-[60px] duration-200;
+}
+
+.header .logo--black {
+  @apply block;
+}
+
+.home .header .logo--white {
+  @apply block;
+}
+
+.home .header .logo--black {
+  @apply hidden;
+}
+
+.home .header a,
+.home .header span {
+  @apply text-white;
+}
+
+.home .header svg path {
+  stroke: white;
+}
+
+.is--scrolled .header {
+  @apply bg-opacity-90 py-4 overflow-hidden;
+
+  a,
+  span {
+    @apply text-white;
+  }
+
+  svg path {
+    stroke: white;
+  }
+
+  .logo {
+    @apply md:h-[50px];
+  }
+
+  .logo--black {
+    @apply hidden;
+  }
+
+  .logo--white {
+    @apply block;
+  }
+}
+
+// .is--scrolled-down .header {
+//   @apply -translate-y-full;
+// }
+
+.main-navigation {
+  @apply flex flex-col space-y-4 md:space-y-5;
+}
+
+.sub-navigation {
+  @apply flex flex-col space-y-4 md:space-y-5;
+}
+
+.menu-panel a {
+  @apply duration-200 hover:text-[#A79A80];
+}
+
+.menu-panel,
+.menu-close {
+  @apply hidden;
+
+  animation: fade 200ms ease-out;
+}
+
+.menu-panel.active,
+.menu-close.active {
+  @apply block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+aside#nav {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+aside#nav.active {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}

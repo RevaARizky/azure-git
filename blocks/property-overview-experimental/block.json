@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/property-overview-experimental",
+    "title": "Property Overview Exp",
+    "description": "Overview for Property Exp",
+    "category": "Text",
+    "keywords": ["property", "overview", "azure"],
+    "viewScript": ["blocks/property-overview-experimental"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/post-list",
+    "title": "Post List",
+    "description": "Post list",
+    "category": "Text",
+    "keywords": ["post", "list", "azure"],
+    "viewScript": ["blocks/post-list"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

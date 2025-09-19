@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "name": "acf/icon-list",
+    "title": "Icon List",
+    "description": "Icon List (dont put inside container)",
+    "category": "text",
+    "keywords": ["icon", "list", "azure"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

@@ -1,0 +1,14 @@
+.block-team-card {
+    .image-wrapper {
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 65%;
+            background: linear-gradient(to top, rgba(46,46,46,1) 0%, rgba(46,46,46,0) 100%);
+            z-index: 1;
+        }
+    }
+}

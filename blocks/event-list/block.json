@@ -1,0 +1,20 @@
+{
+    "apiVersion": 2,
+    "name": "acf/event-list",
+    "title": "Event List",
+    "description": "list for events post type",
+    "category": "Text",
+    "keywords": ["events", "list", "azure"],
+    "viewScript": ["blocks/event-list"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    }
+  }
+  

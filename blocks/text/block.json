@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/text",
+    "title": "Text",
+    "description": "Just text",
+    "category": "Text",
+    "keywords": ["text", "azure"],
+    "viewScript": ["blocks/text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

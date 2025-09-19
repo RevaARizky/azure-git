@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/tabs",
+    "title": "Tabs",
+    "description": "tabs",
+    "category": "Text",
+    "keywords": ["tabs", "azure"],
+    "viewScript": ["blocks/tabs"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

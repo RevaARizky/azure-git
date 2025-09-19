@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "name": "acf/accordion",
+    "title": "Accordion",
+    "description": "Accordion",
+    "category": "layout",
+    "keywords": ["accordion", "azure"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

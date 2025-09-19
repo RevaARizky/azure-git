@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/marquee",
+    "title": "Marquee / Running text",
+    "description": "Running text",
+    "category": "Azure",
+    "keywords": ["marquee", "running", "text", "azure"],
+    "viewScript": ["blocks/marquee"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

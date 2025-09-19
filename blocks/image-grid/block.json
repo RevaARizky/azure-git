@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/image-grid",
+    "title": "Image Grid",
+    "description": "Image Grid",
+    "category": "Text",
+    "keywords": ["image", "grid", "azure"],
+    "viewScript": ["blocks/image-grid"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

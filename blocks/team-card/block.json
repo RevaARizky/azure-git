@@ -1,0 +1,19 @@
+{
+    "apiVersion": 2,
+    "name": "acf/team-card",
+    "title": "Team Card",
+    "description": "Team Card",
+    "category": "Text",
+    "keywords": ["person", "card", "azure"],
+    "viewScript": ["blocks/team-card"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+      "align": false,
+      "anchor": true,
+      "customClassName": true,
+      "jsx": true
+    }
+  }

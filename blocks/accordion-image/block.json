@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "name": "acf/accordion-image",
+    "title": "Accordion Image",
+    "description": "Accordion Image",
+    "category": "layout",
+    "keywords": ["accordion", "image", "azure"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

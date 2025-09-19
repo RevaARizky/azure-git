@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/full-section-image",
+    "title": "Full Section Image",
+    "description": "Full section",
+    "category": "Text",
+    "keywords": ["full", "section", "azure"],
+    "viewScript": ["blocks/full-section-image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

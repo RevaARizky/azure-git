@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/property-overview-individual",
+    "title": "Property Overview Individual",
+    "description": "Overview for Property",
+    "category": "Text",
+    "keywords": ["property", "overview", "azure"],
+    "viewScript": ["blocks/property-overview-individual"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

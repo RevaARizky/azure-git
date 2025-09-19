@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/video-fullscreen",
+    "title": "Video Fullscreen",
+    "description": "Video with fullscreen and overlay",
+    "category": "Text",
+    "keywords": ["video", "azure"],
+    "viewScript": ["blocks/video-fullscreen"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

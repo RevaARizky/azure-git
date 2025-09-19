@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/section-strips-horizontal",
+    "title": "Section Strips Horizontal",
+    "description": "Section Strips Horizontal mainly for homepage",
+    "category": "Text",
+    "keywords": ["section", "strips", "horizontal", "azure"],
+    "viewScript": ["blocks/section-strips-horizontal"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

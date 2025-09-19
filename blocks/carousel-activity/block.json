@@ -1,0 +1,13 @@
+{
+    "apiVersion": 2,
+    "name": "acf/carousel-activity",
+    "title": "Carousel Activity",
+    "description": "Image Carousel Activity",
+    "category": "Text",
+    "keywords": ["activity", "carousel", "azure"],
+    "viewScript": ["blocks/carousel-activity"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+  }

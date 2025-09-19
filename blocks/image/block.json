@@ -1,0 +1,12 @@
+{
+    "apiVersion": 2,
+    "name": "acf/image",
+    "title": "Image",
+    "description": "Just an image block",
+    "category": "layout",
+    "keywords": ["image", "azure"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}
