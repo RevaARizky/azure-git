@@ -15,6 +15,7 @@ const initImage = (element) => {
         gsap.set(image, {
             height: '100%'
         })
+        return
     }
     gsap.set(image, {
         height: '170%'
