@@ -29,7 +29,7 @@ $items = get_field('items');
 ?>
 <section class="<?= esc_attr($classes) ?>" id="<?= esc_attr($id) ?>">
 
-    <div class="grid grid-cols-10 gap-x-4 overflow-x-scroll md:w-full w-max">
+    <div class="grid grid-cols-10 gap-x-4 overflow-x-auto md:w-full w-max">
         <div class="col-span-12 py-2">
             <hr style="border-color: #000;">
         </div>
