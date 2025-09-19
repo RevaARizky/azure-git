@@ -57,7 +57,7 @@ if(!empty($args['style'])) {
 ?>
 
 <div class="<?= esc_attr($classes) ?>" id="<?= esc_attr($id) ?>">
-    <a href="<?= get_field('url') ? get_field('url') : '#' ?>" class="button button-liquid button--stroke<?= get_field('big_button') ? ' button-big' : '' ?> <?= $block['className'] ?>" style="<?= isset($vars) ? $vars : '' ?>">
+    <a href="<?= get_field('url') ? get_field('url') : '#' ?>" class="button button-liquid button--stroke<?= get_field('big_button') ? ' button-big' : '' ?> <?= $block['className'] ?>" style="<?= isset($vars) ? $vars : '' ?>" <?= get_field('open_tab') ? 'target="_blank"' : '' ?>>
         <span class="button__flair"></span>
         <span class="button__label text-button"><?= $label ?></span>
     </a>
