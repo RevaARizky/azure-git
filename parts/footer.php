@@ -16,7 +16,7 @@
                         </div>
                         <div>
                             <p class="md:mb-0 mb-4 menu"><a href="mailto:sales@azureviewproperties.com">sales@azureviewproperties.com</a></p>
-                            <p class="menu"><a href="tel:6281337568977">+62 813‑3756‑8977</a></p>
+                            <p class="menu"><a href="https://wa.me/447447293096" target="_blank">+447447293096</a></p>
                         </div>
                     </div>
                 </div>
@@ -33,8 +33,8 @@
         
                 <div class="item w-full md:w-auto">
                     <div class="social-list flex justify-center md:justify-start gap-x-6">
-                        <div class=" facebook">
-                            <a href="#" class="button button-liquid button--stroke social" style="--btn-background-color: #fff; --btn-hover-background-color: #5f7e9e;">
+                        <div class="social facebook">
+                            <a href="https://www.facebook.com/profile.php?id=61577742643617&locale=id_ID" target="_blank" class="button button-liquid button--stroke social" style="--btn-background-color: #fff; --btn-hover-background-color: #5f7e9e;">
                                 <span class="button__flair"></span>
                                 <span class="button__label text-button">
                                     <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@
                             </a>
                         </div>
                         <div class="social instagram">
-                            <a href="#" class="button button-liquid button--stroke social" style="--btn-background-color: #fff; --btn-hover-background-color: #5f7e9e;">
+                            <a href="https://www.instagram.com/azureviewproperties/" target="_blank" class="button button-liquid button--stroke social" style="--btn-background-color: #fff; --btn-hover-background-color: #5f7e9e;">
                                 <span class="button__flair"></span>
                                 <span class="button__label text-button">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="social tiktok">
+                        <!-- <div class="social tiktok">
                             <a href="#" class="button button-liquid button--stroke social" style="--btn-background-color: #fff; --btn-hover-background-color: #5f7e9e;">
                                 <span class="button__flair"></span>
                                 <span class="button__label text-button">
@@ -64,7 +64,7 @@
                             </a>
                         </div>
                         <div class="social youtube">
-                            <a href="#" class="button button-liquid button--stroke social" style="--btn-background-color: #fff; --btn-hover-background-color: #5f7e9e;">
+                            <a href="https://www.instagram.com/azureviewproperties/" class="button button-liquid button--stroke social" style="--btn-background-color: #fff; --btn-hover-background-color: #5f7e9e;">
                                 <span class="button__flair"></span>
                                 <span class="button__label text-button">
                                     <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +72,7 @@
                                     </svg>
                                 </span>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
         
