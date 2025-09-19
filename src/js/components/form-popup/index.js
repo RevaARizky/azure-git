@@ -21,9 +21,11 @@ const initFormPopup = (element) => {
     }
 
     element.onSubmitForm = () => {
-        gsap.to(downloadButton, {
-            display: 'block'
-        })
+        // gsap.to(downloadButton, {
+        //     display: 'block'
+        // })
+        downloadButton.querySelector('a').click()
+        
     }
 
     gsap.set(element, {
@@ -35,7 +37,7 @@ const initFormPopup = (element) => {
 
     element.querySelector('.close-button').addEventListener('click', element.onClose)
 
-    formElement.addEventListener('wpcf7submit', element.onSubmitForm)
+    formElement.addEventListener('wpcf7mailsent', element.onSubmitForm)
     
 }
 

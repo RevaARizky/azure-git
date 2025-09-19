@@ -11,10 +11,9 @@
                 </div>
                 <div class="form block-form py-12 md:px-8 px-4 overflow-y-scroll">
                     <?= do_shortcode(get_field('form_shortcode', 'option')); ?>
-        
                     <div id="pdf-button" class="button-wrapper pt-12" style="display: none;">
                         <div class="acf-block block-button">
-                            <a href="<?= get_field('pdf_link', 'option') ?>" download class="button button-liquid button--stroke" style="--btn-background-color: var(--theme-blue);">
+                            <a href="<?= get_field('pdf_link', 'option') ?>" download target="_blank" class="button button-liquid button--stroke" style="--btn-background-color: var(--theme-blue);">
                                 <span class="button__flair"></span>
                                 <span class="button__label text-button">Download PDF</span>
                             </a>
