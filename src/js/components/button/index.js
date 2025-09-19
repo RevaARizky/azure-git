@@ -1,4 +1,7 @@
 import gsap from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+
+gsap.registerPlugin(ScrollToPlugin)
 
 const initButton = (el) => {
     let xSet, ySet, flair
@@ -17,6 +20,11 @@ const initButton = (el) => {
             e.preventDefault()
             formElement.onOpen()
         })
+    }
+
+    if(el.classList.contains('to-next-section')) {
+        const nextSection = document.querySelectorAll('.page-container section')[1]
+        gsap.to(window, {duration: .4, scrollTo: nextSection})
     }
 
     const getXY = e => {
